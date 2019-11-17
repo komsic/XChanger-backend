@@ -1,0 +1,44 @@
+{
+  "name": "xchanger-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src --exec babel-node",
+    "clean": "rm -rf dist && mkdir dist",
+    "build": "npm run clean && babel src -d ./dist",
+    "start": "npm run build && node ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komsic/XChanger-backend.git"
+  },
+  "author": "komsic <kayodemicheal159@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/komsic/XChanger-backend/issues"
+  },
+  "homepage": "https://github.com/komsic/XChanger-backend#readme",
+  "dependencies": {
+    "@hapi/joi": "^16.1.7",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan-body": "^2.4.8",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/runtime": "^7.7.2",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.4"
+  }
+}
